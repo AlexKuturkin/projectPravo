@@ -1,0 +1,6 @@
+@import url("./mod/header__arrow_mod.css");
+
+.header__arrow {
+    margin-left: 8px;
+    margin-bottom: 5px;
+}

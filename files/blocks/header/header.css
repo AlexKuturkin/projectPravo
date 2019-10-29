@@ -1,0 +1,14 @@
+@import url("./logo/header__logo.css");
+@import url("./nav/header__nav.css");
+@import url("./arrow/header__arrow.css");
+@import url("./container/header__container.css");
+@import url("./button/header__button.css");
+@import url("./menu-item/header__menu-item.css");
+
+.header {
+  font-size: 21px;
+  line-height: 23px;
+  text-transform: uppercase;
+  font-family: 'Neucha';
+  color: white;
+}
