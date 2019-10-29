@@ -1,0 +1,8 @@
+.header__nav {
+    margin-top: 12px;
+    width: 100%;
+    height: 52px;
+    background-color: #653D7C;
+    display: flex;
+    align-items: center;
+}

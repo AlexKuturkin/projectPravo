@@ -1,0 +1,6 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 9.5%;
+    width: 53%;
+}
