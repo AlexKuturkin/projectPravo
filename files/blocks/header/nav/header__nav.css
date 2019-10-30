@@ -6,3 +6,7 @@
     display: flex;
     align-items: center;
 }
+
+.header__nav a {
+    color: white;
+}

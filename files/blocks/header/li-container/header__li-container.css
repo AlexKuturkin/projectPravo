@@ -1,0 +1,15 @@
+@import url("./li/header__li.css");
+@import url("./li-container_active/li-container_active.css");
+
+.header__li-container {
+    display: none;
+    margin-left: 9.5%;
+    width: 60%;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 1px;
+}
+
+.header__li-container a {
+    color: black;
+}
