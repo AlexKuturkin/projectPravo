@@ -1,0 +1,6 @@
+.map__button-item_show {
+    background-color: #F2F8F6;
+    z-index: -1;
+    position: relative;
+    color: #00B956;
+}

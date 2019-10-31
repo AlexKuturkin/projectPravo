@@ -1,0 +1,12 @@
+@import url("./show/map__button-item_show.css");
+@import url("./list/map__button-item_list.css");
+
+.map__button-item {
+    width: 220px;
+    height: 48px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 1px;
+}

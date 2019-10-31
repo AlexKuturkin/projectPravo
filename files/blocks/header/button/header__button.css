@@ -5,6 +5,8 @@
     color: white;
     border: none;
     margin-left: 10%;
+    font-size: 18px;
+    line-height: 25px;
 }
 
 .header__button:hover {

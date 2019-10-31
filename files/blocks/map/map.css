@@ -1,0 +1,14 @@
+@import url("./button-item/map__button-item.css");
+@import url("./text/map__button-item-text.css");
+
+.map {
+    margin-left: 9.5%;
+    margin-top: 80px;
+}
+
+#map {
+    width: 1200px; 
+    height: 680px; 
+    padding: 0;
+    margin: 0;
+}

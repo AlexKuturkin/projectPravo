@@ -1,0 +1,8 @@
+@import url("./h1/information__h1.css");
+@import url("./text/information__text.css");
+
+.information {
+    position: relative;
+    z-index: -1;
+    margin-left: 9.5%;
+}

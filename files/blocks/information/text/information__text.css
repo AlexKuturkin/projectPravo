@@ -1,0 +1,6 @@
+@import url("./mod/information__text_mod.css");
+
+.information__text {
+    font-size: 16px;
+    line-height: 22px;
+}

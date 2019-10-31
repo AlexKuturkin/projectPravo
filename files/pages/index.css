@@ -1,5 +1,7 @@
 @import url("../vendor/normalize.css");
 @import url("../blocks/header/header.css");
+@import url("../blocks/information/information.css");
+@import url("../blocks/map/map.css");
 
 @font-face {
     src: url("../fonts/q5uGsou0JOdh94bfuQltOxU.woff2") format('woff2');
@@ -8,27 +10,21 @@
     font-weight: 400;
 }
 
+body {
+    font-family: 'Neucha';
+}
+
 ul, li {
     margin: 0;
     padding: 0;
 }
 
-
-
-
-
-.li-container_active {
-    display: flex;
-    height: 1px;
+.f {
+    width: 150px;
 }
 
 
 
-
-.a {
-    color: red;
-    height: 100px;
-}
 
 /*
 body {

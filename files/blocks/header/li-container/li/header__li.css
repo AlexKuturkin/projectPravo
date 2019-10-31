@@ -10,6 +10,7 @@
     border-bottom: 1px solid #eaeaea;
     padding: 5px;
     cursor: pointer;
+    background-color: white;
 }
 
 .header__li li:hover {
