@@ -1,0 +1,15 @@
+.header__li_mod {
+    border-bottom: 1px solid #eaeaea;
+    padding: 5px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.header__li_mod:hover {
+    background-color: #eaeaea;
+}
+
+.header__li_mod-a {
+    color: black;
+}

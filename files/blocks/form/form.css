@@ -9,8 +9,19 @@
 @import url("./textarea/form__textarea.css");
 
 .form {
-  margin-top: 160px;
-  margin-left: 9.5%;
-  margin-right: 9.5%;
+  margin: 0 auto;
+  max-width: 1200px;
   display: flex;
+}
+
+@media (max-width: 1200px) {
+  .form {
+    display: block;
+  }
+}
+
+@media (max-width: 1100px) {
+  .form {
+    max-width: 90%;
+  }
 }

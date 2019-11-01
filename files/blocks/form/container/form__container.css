@@ -4,3 +4,9 @@
     width: 62%;
     margin-bottom: 160px;
 }
+
+@media (max-width: 950px) {
+    .form__container {
+      width: 90%;
+    }
+  }

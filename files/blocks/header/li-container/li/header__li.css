@@ -1,18 +1,10 @@
 @import url("./active/header__li_active.css");
+@import url("./li_mod/header__li_mod.css");
 
 .header__li {
     list-style: none;
     border: 1px solid #eaeaea;
     opacity: 0;   
-}
-
-.header__li li {
-    border-bottom: 1px solid #eaeaea;
-    padding: 5px;
-    cursor: pointer;
-    background-color: white;
-}
-
-.header__li li:hover {
-    background-color: #eaeaea;
+    z-index: -1;
+    position: relative;
 }

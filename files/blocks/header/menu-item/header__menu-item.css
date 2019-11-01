@@ -1,6 +1,11 @@
 .header__menu-item {
-    margin-top: 14px;
-    height: 38px;
+    font-size: 21px;
+    line-height: 23px;
+    margin: 0;
+    text-transform: uppercase;
+    height: 36px;
+    margin-top: 16px;
+    margin-left: 5px;
 }
 
 .text_brown:hover {

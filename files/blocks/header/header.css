@@ -5,9 +5,14 @@
 @import url("./button/header__button.css");
 @import url("./menu-item/header__menu-item.css");
 @import url("./li-container/header__li-container.css");
+@import url("./nav-container/header__nav-container.css");
 
 .header {
   font-size: 21px;
   line-height: 23px;
+  color: white;
+}
+
+.header__a {
   color: white;
 }

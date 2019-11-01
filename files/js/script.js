@@ -7,28 +7,23 @@ const liFamily = document.querySelector(".header__li_family");
 const aboutHelp = document.querySelector(".header__menu-item_help");
 const liHelp = document.querySelector(".header__li_help");
 
-const headerLiContainer = document.querySelector(".header__li-container");
 
 class MenuItem {
   makeActive(item, menu) {
     item.addEventListener("mouseover", function() {
       menu.classList.toggle("header__li_active");
-      headerLiContainer.classList.toggle("li-container_active");
     });
 
     item.addEventListener("mouseout", function() {
-      menu.classList.remove("header__li_active");
-      headerLiContainer.classList.remove("li-container_active");
+      menu.classList.remove("header__li_active"); 
     });
 
     menu.addEventListener("mouseover", function() {
       menu.classList.toggle("header__li_active");
-      headerLiContainer.classList.toggle("li-container_active");
     });
 
     menu.addEventListener("mouseout", function() {
       menu.classList.remove("header__li_active");
-      headerLiContainer.classList.remove("li-container_active");
     });
   }
 }
@@ -40,10 +35,10 @@ menuItem.makeActive(aboutHelp, liHelp);
 
 // код карты
 function init() {
-  var myMap = new ymaps.Map(
+  const myMap = new ymaps.Map(
       "map__api",
       {
-        center: [54.83, 37.11],
+        center: [60.83, 43.11],
         zoom: 5
       },
       {
@@ -98,7 +93,7 @@ function init() {
   myMap.geoObjects.add(myPlacemark2);
 
   myMap.events.add(["balloonopen", "balloonclose"], function(event) {
-    var target = event.get("target");
+    const target = event.get("target");
     if (target.geometry && typeof target.getGeoObjects) {
       if (event.get("type") == "balloonopen") {
         target.options.set({

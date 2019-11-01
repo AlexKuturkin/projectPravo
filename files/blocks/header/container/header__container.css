@@ -1,9 +1,5 @@
 .header__container {
     display: flex;
     justify-content: space-between;
-    margin-left: 9.5%;
-    width: 53%;
-    text-transform: uppercase;
-    font-size: 21px;
-    line-height: 23px;
+    width: 72%;
 }

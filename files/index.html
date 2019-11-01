@@ -5,53 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Право на чудо</title>
+    <link rel="stylesheet" href="./vendor/normalize.css">
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
   <body>
     <header class="header">
         <img src="./images/header__logo.png" class="header__logo" alt="логотип Право на чудо">
         <nav class="header__nav">
-        <div class="header__container">
-            <a href="#"><ul class="header__menu-item header__menu-item_fond text_brown">о фонде<svg class="header__arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="header__arrow_mod" d="M1 1L5 5L9 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </ul></a>
-            <a href="#"><ul class="header__menu-item header__menu-item_family text_brown">семьям<svg class="header__arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="header__arrow_mod" d="M1 1L5 5L9 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg></ul></a>
-            <a href="#"><ul class="header__menu-item header__menu-item_help text_brown">помочь фонду<svg class="header__arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="header__arrow_mod" d="M1 1L5 5L9 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg></ul></a>
-        </div>
-        <button class="header__button" tabindex="0">Сделать пожертвование</button>
+        <div class="header__nav-container">
+          <div class="header__container">
+            <div class="header__li-container">
+              <a href="#" class="header__a"><h5 class="header__menu-item header__menu-item_fond text_brown">о фонде<svg class="header__arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="header__arrow_mod" d="M1 1L5 5L9 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </h5></a>
+                <ul class="header__li header__li_fond">
+                    <li class="header__li_mod"><a href="#" class="header__li_mod-a">О проблеме</a></li>
+                    <li class="header__li_mod"><a href="#" class="header__li_mod-a">Миссия, цели</a></li>
+                    <li class="header__li_mod"><a href="#" class="header__li_mod-a">Программы фонда</a></li>
+                    <li class="header__li_mod"><a href="#" class="header__li_mod-a">Команда</a></li>
+                    <li class="header__li_mod"><a href="#" class="header__li_mod-a">Нас поддерживают</a></li>
+                    <li class="header__li_mod"><a href="#" class="header__li_mod-a">Документы</a></li>
+                    <li class="header__li_mod"><a href="#" class="header__li_mod-a">Отчёты</a></li>
+                    <li class="header__li_mod"><a href="#" class="header__li_mod-a">СМИ о нас</a></li>
+                    <li class="header__li_mod"><a href="#" class="header__li_mod-a">Контакты</a></li>
+                  </ul>
+                </div>
+                <div class="header__li-container">
+              <a href="#" class="header__a"><h5 class="header__menu-item header__menu-item_family text_brown">семьям<svg class="header__arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="header__arrow_mod" d="M1 1L5 5L9 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg></h5></a>
+                  <ul class="header__li header__li_family">
+                      <li class="header__li_mod"><a href="#" class="header__li_mod-a">Если вам нужна помощь</a></li>
+                      <li class="header__li_mod"><a href="#" class="header__li_mod-a">База знаний</a></li>
+                      <li class="header__li_mod"><a href="#" class="header__li_mod-a">Online-школа</a></li>
+                      <li class="header__li_mod"><a href="#" class="header__li_mod-a">Истории успеха</a></li>
+                    </ul>
+                </div>
+                <div class="header__li-container">
+              <a href="#" class="header__a"><h5 class="header__menu-item header__menu-item_help text_brown">помочь фонду<svg class="header__arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="header__arrow_mod" d="M1 1L5 5L9 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg></h5></a>
+              <ul class="header__li header__li_help">
+                  <li class="header__li_mod"><a href="#" class="header__li_mod-a">Сделать пожертвование</a></li>
+                  <li class="header__li_mod"><a href="#" class="header__li_mod-a">От имени компании</a></li>
+                  <li class="header__li_mod"><a href="#" class="header__li_mod-a">Помочь товарами/услугами</a></li>
+                  <li class="header__li_mod"><a href="#" class="header__li_mod-a">Чудо-волонтеры</a></li>
+                  <li class="header__li_mod"><a href="#" class="header__li_mod-a">Чудо-событие</a></li>
+                  <li class="header__li_mod"><a href="#" class="header__li_mod-a">Информационная поддержка</a></li>
+                </ul>
+              </div>
+          </div>
+          <button class="header__button" tabindex="0">Сделать пожертвование</button>
         </nav>
-        <div class="header__li-container">
-        <nav class="header__li header__li_fond">
-          <li><a href="#">О проблеме</a></li>
-          <li><a href="#">Миссия, цели</a></li>
-          <li><a href="#">Программы фонда</a></li>
-          <li><a href="#">Команда</a></li>
-          <li><a href="#">Нас поддерживают</a></li>
-          <li><a href="#">Документы</a></li>
-          <li><a href="#">Отчёты</a></li>
-          <li><a href="#">СМИ о нас</a></li>
-          <li><a href="#">Контакты</a></li>
-        </nav>
-        <nav class="header__li header__li_family">
-          <li><a href="#">Если вам нужна помощь</a></li>
-          <li><a href="#">База знаний</a></li>
-          <li><a href="#">Online-школа</a></li>
-          <li><a href="#">Истории успеха</a></li>
-        </nav>
-        <nav class="header__li header__li_help">
-          <li><a href="#">Сделать пожертвование</a></li>
-          <li><a href="#">От имени компании</a></li>
-          <li><a href="#">Помочь товарами/услугами</a></li>
-          <li><a href="#">Чудо-волонтеры</a></li>
-          <li><a href="#">Чудо-событие</a></li>
-          <li><a href="#">Информационная поддержка</a></li>
-        </nav>
-      </div>
     </header>
     <section class="information">
       <h1 class="information__h1" tabindex="0">истории мам и малышей</h1>
@@ -106,6 +112,6 @@
         <div class="footer__dark"></div>
       </footer>
     <script defer src="./js/script.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   </body>
 </html>
