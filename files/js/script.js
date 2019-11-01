@@ -1,3 +1,4 @@
+// переменные для выпадающего меню
 const aboutFond = document.querySelector(".header__menu-item_fond");
 const liFond = document.querySelector(".header__li_fond");
 
@@ -7,7 +8,7 @@ const liFamily = document.querySelector(".header__li_family");
 const aboutHelp = document.querySelector(".header__menu-item_help");
 const liHelp = document.querySelector(".header__li_help");
 
-
+// класс, делающий меню выпадающим
 class MenuItem {
   makeActive(item, menu) {
     item.addEventListener("mouseover", function() {
@@ -15,7 +16,7 @@ class MenuItem {
     });
 
     item.addEventListener("mouseout", function() {
-      menu.classList.remove("header__li_active"); 
+      menu.classList.remove("header__li_active");
     });
 
     menu.addEventListener("mouseover", function() {
@@ -28,12 +29,14 @@ class MenuItem {
   }
 }
 
+// создаём новый объект, чтобы вызывать методы класса
 const menuItem = new MenuItem();
+// вызываем методы
 menuItem.makeActive(aboutFond, liFond);
 menuItem.makeActive(aboutFamily, liFamily);
 menuItem.makeActive(aboutHelp, liHelp);
 
-// код карты
+// код Яндекс карты
 function init() {
   const myMap = new ymaps.Map(
       "map__api",
@@ -48,21 +51,14 @@ function init() {
     myPlacemark = new ymaps.Placemark(
       [56.907228, 31.260503],
       {
-        // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
         balloonContentBody:
           "<img class=map__balloon-photo src='./images/map__balloon-photo.png'><a href=#><h6 class=map__balloon-subheader>Пермский край</h6><h4 class=map__balloon-headline>История Гульназ и ее сыночка Саида</h4><p class=map__balloon-text>Мне сложно и очень тяжело вспоминать, но я хочу поделиться с вами, как это было три ...</p></a>",
         hintContent: "История Гульназ и ее сыночка Саида"
       },
       {
-        // Опции.
-        // Необходимо указать данный тип макета.
         iconLayout: "default#image",
-        // Своё изображение иконки метки.
         iconImageHref: "./images/map__mark_inactive.png",
-        // Размеры метки.
         iconImageSize: [22, 24],
-        // Смещение левого верхнего угла иконки относительно
-        // её "ножки" (точки привязки).
         iconImageOffset: [0, 0],
         hideIconOnBalloonOpen: false
       }
@@ -75,23 +71,18 @@ function init() {
         hintContent: "История Гульназ и ее сыночка Саида"
       },
       {
-        // Опции.
-        // Необходимо указать данный тип макета.
         iconLayout: "default#image",
-        // Своё изображение иконки метки.
         iconImageHref: "./images/map__mark_inactive.png",
-        // Размеры метки.
         iconImageSize: [22, 24],
-        // Смещение левого верхнего угла иконки относительно
-        // её "ножки" (точки привязки).
         iconImageOffset: [0, 0],
         hideIconOnBalloonOpen: false
       }
     );
-
+  // добавляем метки на карту
   myMap.geoObjects.add(myPlacemark);
   myMap.geoObjects.add(myPlacemark2);
 
+  // слушаем открытый балун, чтобы делать активным
   myMap.events.add(["balloonopen", "balloonclose"], function(event) {
     const target = event.get("target");
     if (target.geometry && typeof target.getGeoObjects) {
@@ -108,27 +99,26 @@ function init() {
   });
 }
 
-ymaps.ready(init);
+// блок, скрывающий карту, открывающий список детей с карты
+const map = document.querySelector("#map__api");
+const showList = document.querySelector(".map__button-item_list");
+const showMap = document.querySelector(".map__button-item_show");
+const list = document.querySelector(".map__list");
 
-
-
-
-const map = document.querySelector("#map__api"); 
-const showList = document.querySelector(".map__button-item_list"); 
-const showMap = document.querySelector(".map__button-item_show");  
-const list = document.querySelector(".map__list"); 
-
-showList.addEventListener("click", function () {
-  list.classList.add("map_mod-visible")
-  map.classList.add("map_mod-invisible")
-  showList.classList.add("map__button_mod-active")
-  showMap.classList.add("map__button_mod-inactive")
+showList.addEventListener("click", function() {
+  list.classList.add("map_mod-visible");
+  map.classList.add("map_mod-invisible");
+  showList.classList.add("map__button_mod-active");
+  showMap.classList.add("map__button_mod-inactive");
 });
 
-showMap.addEventListener("click", function () {
-  list.classList.remove("map_mod-visible")
-  map.classList.remove("map_mod-invisible")
-  map.classList.add("map_mod-visible")
-  showList.classList.remove("map__button_mod-active")
-  showMap.classList.remove("map__button_mod-inactive")
-})
+showMap.addEventListener("click", function() {
+  list.classList.remove("map_mod-visible");
+  map.classList.remove("map_mod-invisible");
+  map.classList.add("map_mod-visible");
+  showList.classList.remove("map__button_mod-active");
+  showMap.classList.remove("map__button_mod-inactive");
+});
+
+// запуск карты
+ymaps.ready(init);

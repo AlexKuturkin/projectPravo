@@ -6,38 +6,18 @@
 @import url("../blocks/footer/footer.css");
 
 @font-face {
-    src: url("../fonts/q5uGsou0JOdh94bfuQltOxU.woff2") format('woff2');
-    font-family: 'Neucha';
-    font-style: normal;
-    font-weight: 400;
+  src: url("../fonts/q5uGsou0JOdh94bfuQltOxU.woff2") format("woff2");
+  font-family: "Neucha";
+  font-style: normal;
+  font-weight: 400;
 }
 
 body {
-    font-family: 'Neucha';
+  font-family: "Neucha";
 }
 
-ul, li {
-    margin: 0;
-    padding: 0;
+ul,
+li {
+  margin: 0;
+  padding: 0;
 }
-
-
-
-
-
-
-
-
-
-/*
-body {
-    margin: 0 auto;
-    width: 83%;
-}
-
-@media (max-width: 769px) {
-   body {
-    width: 92%;
-   }
-}
-*/
