@@ -8,3 +8,9 @@
     margin-bottom: 10px;
     font-family: Open Sans;
 }
+
+@media (max-width: 480px) {
+    .map__balloon-headline {
+        width: 90%;
+    }
+  }

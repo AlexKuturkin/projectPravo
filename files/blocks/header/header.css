@@ -6,6 +6,7 @@
 @import url("./menu-item/header__menu-item.css");
 @import url("./li-container/header__li-container.css");
 @import url("./nav-container/header__nav-container.css");
+@import url("./image/header__image.css");
 
 .header {
   font-size: 21px;

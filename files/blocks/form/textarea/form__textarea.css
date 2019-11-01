@@ -1,7 +1,7 @@
 .form__textarea {
     border: none;
     border-bottom: 1px solid #653d7c;
-    width: 680px;
+    max-width: 680px;
     height: 60px;
     resize: none;
 }

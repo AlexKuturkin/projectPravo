@@ -10,6 +10,12 @@
     text-align: center;  
 }
 
+@media (max-width: 700px) {
+    .form__input-checkbox + .form__label-checkbox {
+        width: 50px;
+    }
+  }
+
 .form__input-checkbox:checked + .form__label-checkbox:before{
     color: #9F82C9;
     content: '✔';

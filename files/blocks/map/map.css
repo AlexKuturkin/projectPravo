@@ -21,3 +21,10 @@
     margin: 80px auto 160px;
   }
 }
+
+@media (max-width: 765px) {
+  .map {
+    max-width: 100%;
+    margin-bottom: 80px;
+  }
+}

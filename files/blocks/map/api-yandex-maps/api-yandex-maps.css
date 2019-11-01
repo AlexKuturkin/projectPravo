@@ -11,6 +11,14 @@
     padding: 0;
 }
 
+@media (max-width: 481px) {
+    .ymaps-2-1-74-balloon__close+.ymaps-2-1-74-balloon__content {
+      width: 370px;
+      height: 380px;
+      margin-right: 0;
+  }
+}
+
 .ymaps-2-1-74-balloon__close-button.ymaps-2-1-74-balloon__close-button {
     width: 20px;
     height: 20px;

@@ -1,9 +1,6 @@
-.header__logo {
-    margin-left: 9%;
-}
-
-@media (max-width: 769px) {
+@media (max-width: 500px) {
   .header__logo {
-    margin-left: 32px;
+    width: 80px;
+    height: 80px;
   }
 }
