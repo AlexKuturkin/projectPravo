@@ -1,0 +1,16 @@
+@import url("./button/form__button.css");
+@import url("./checkbox/form__checkbox.css");
+@import url("./container/form__container.css");
+@import url("./container_mod/form__container_mod.css");
+@import url("./input-text/form__input-text.css");
+@import url("./label/form__label.css");
+@import url("./photobutton/form__photobutton.css");
+@import url("./text/form__text.css");
+@import url("./textarea/form__textarea.css");
+
+.form {
+  margin-top: 160px;
+  margin-left: 9.5%;
+  margin-right: 9.5%;
+  display: flex;
+}

@@ -1,0 +1,9 @@
+.map__list-container {
+    background-color: #F2F8F6;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.map__list-container:hover {
+    background-color: lightgray;
+}

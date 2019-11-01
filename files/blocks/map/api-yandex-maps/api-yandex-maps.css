@@ -1,0 +1,21 @@
+#map__api {
+    width: 1200px; 
+    height: 680px; 
+    padding: 0;
+    margin: 0;
+}
+
+.ymaps-2-1-74-balloon__close+.ymaps-2-1-74-balloon__content {
+    height: 301px;
+    width: 250px;
+    padding: 0;
+}
+
+.ymaps-2-1-74-balloon__close-button.ymaps-2-1-74-balloon__close-button {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    margin-top: 12px;
+    background-image: url("../../../images/map__balloon-close.png");
+    opacity: 1;
+}

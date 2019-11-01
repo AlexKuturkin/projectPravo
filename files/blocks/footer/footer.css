@@ -1,0 +1,13 @@
+.footer {
+    width: 100%;
+}
+
+.footer__light {
+    height: 396px;
+    background-color: #F2F8F6;
+}
+
+.footer__dark {
+    height: 52px;
+    background-image: url("../../images/footer__dark.png");
+}

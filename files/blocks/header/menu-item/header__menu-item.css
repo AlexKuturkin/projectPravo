@@ -3,7 +3,7 @@
     height: 38px;
 }
 
-.header__menu-item:hover {
+.text_brown:hover {
     color: #CC9514;
     cursor: pointer;
 }

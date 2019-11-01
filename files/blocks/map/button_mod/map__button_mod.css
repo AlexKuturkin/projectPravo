@@ -1,0 +1,7 @@
+.map__button_mod-active {
+    background-color: #F2F8F6;
+}
+
+.map__button_mod-inactive {
+    background-color: white;
+}

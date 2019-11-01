@@ -1,0 +1,10 @@
+@import url("./list-container/map__list-container.css");
+@import url("./list-subheader/map__list-subheader.css");
+@import url("./list-header/map__list-header.css");
+@import url("./list-text/map__list-text.css");
+
+.map__list {
+    display: none;
+    margin-right: 9.5%;
+    margin-bottom: 20px;
+}

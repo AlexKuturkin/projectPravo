@@ -1,0 +1,9 @@
+.form__text {
+    max-width: 360px;
+    margin-top: 0;
+    font-size: 22px;
+    line-height: 30px;
+    color: #572d70;
+    margin-right: 100px;
+    height: 300px;
+  }

@@ -2,6 +2,8 @@
 @import url("../blocks/header/header.css");
 @import url("../blocks/information/information.css");
 @import url("../blocks/map/map.css");
+@import url("../blocks/form/form.css");
+@import url("../blocks/footer/footer.css");
 
 @font-face {
     src: url("../fonts/q5uGsou0JOdh94bfuQltOxU.woff2") format('woff2');
@@ -19,9 +21,10 @@ ul, li {
     padding: 0;
 }
 
-.f {
-    width: 150px;
-}
+
+
+
+
 
 
 

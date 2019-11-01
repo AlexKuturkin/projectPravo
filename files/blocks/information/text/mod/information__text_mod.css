@@ -1,3 +1,8 @@
 .information__text_mod {
     color: blue;
 }
+
+.information__text_mod:hover {
+    cursor: pointer;
+    color: #00B956;
+}

@@ -1,4 +1,6 @@
 .header__li-container.li-container_active {
     display: flex;
     height: 0;
+    position: relative;
+    z-index: 1;
 }

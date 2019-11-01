@@ -1,0 +1,10 @@
+.map__balloon-text {
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+    width: 60%;
+    margin-left: 16px;
+    font-family: Open Sans;
+    letter-spacing: 0.5px;
+    margin-top: 5px;
+}

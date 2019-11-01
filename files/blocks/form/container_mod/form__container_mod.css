@@ -1,0 +1,16 @@
+.form__container-name-region {
+    display: flex;
+}
+
+.form__container-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__container-item_margin-right {
+    margin-right: 50px;
+}
+
+.form__container-item_margin-top {
+    margin-top: 50px;
+}

@@ -1,0 +1,31 @@
+/* кнопка прикрепить фото */
+.form__input-file {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.form__input-file, .form__label-file {
+    font-weight: 700;
+    color: #9F82C9;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex; 
+    width: 160px;
+    margin-top: 40px;
+}
+
+.form__input-file:focus + .form__label-file,
+.form__input-file + .form__label-file:hover {
+    background-color: #F2F8F6;
+}
+.form__input-file__image {
+    margin-right: 10px;
+}
+.form__input-file__span {
+    margin-top: 3px;
+}

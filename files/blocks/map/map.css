@@ -1,14 +1,16 @@
 @import url("./button-item/map__button-item.css");
 @import url("./text/map__button-item-text.css");
+@import url("./api-yandex-maps/api-yandex-maps.css");
+@import url("./balloon-photo/map__balloon-photo.css");
+@import url("./balloon-subheader/map__balloon-subheader.css");
+@import url("./balloon-headline/map__balloon-headline.css");
+@import url("./balloon-text/map__balloon-text.css");
+@import url("./list/map__list.css");
+@import url("./map_mod/map_mod.css");
+@import url("./button-container/map__button-container.css");
+@import url("./button_mod/map__button_mod.css");
 
 .map {
     margin-left: 9.5%;
     margin-top: 80px;
-}
-
-#map {
-    width: 1200px; 
-    height: 680px; 
-    padding: 0;
-    margin: 0;
 }
