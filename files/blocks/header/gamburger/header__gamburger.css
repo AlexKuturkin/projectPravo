@@ -1,0 +1,14 @@
+.header__gamburger {
+  width: 24px;
+  height: 20px;
+  display: none;
+}
+
+@media (max-width: 870px) {
+  .header__gamburger {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 32px;
+  }
+}

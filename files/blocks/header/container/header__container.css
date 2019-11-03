@@ -3,3 +3,10 @@
     justify-content: space-between;
     width: 72%;
 }
+
+@media (max-width: 870px) {
+    .header__container {
+        display: block;
+        width: 90%;
+    }
+  }

@@ -7,6 +7,8 @@
 @import url("./li-container/header__li-container.css");
 @import url("./nav-container/header__nav-container.css");
 @import url("./image/header__image.css");
+@import url("./gamburger/header__gamburger.css");
+@import url("./gamburger-close/header__gamburger-close.css");
 
 .header {
   font-size: 21px;

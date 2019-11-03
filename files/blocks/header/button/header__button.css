@@ -1,15 +1,21 @@
 .header__button {
-    background-color: #00B956;
-    width: 22%;
-    height: 40px;
-    color: white;
-    border: none;
-    font-size: 18px;
-    line-height: 25px;
-    margin-top: 6px;
+  background-color: #00b956;
+  width: 22%;
+  height: 40px;
+  color: white;
+  border: none;
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 6px;
 }
 
 .header__button:hover {
-    cursor: pointer;
-    opacity: 0.9;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+@media (max-width: 870px) {
+  .header__button {
+    width: 90%;
+  }
 }

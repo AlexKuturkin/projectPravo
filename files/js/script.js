@@ -122,3 +122,16 @@ showMap.addEventListener("click", function() {
 
 // запуск карты
 ymaps.ready(init);
+
+
+const header = document.querySelector(".header__nav");
+const gamburger = document.querySelector(".header__gamburger");
+const closeGamburger = document.querySelector(".header__gamburger-close"); 
+
+gamburger.addEventListener("click", function () {
+  header.classList.add("header__nav_visible");
+})
+
+closeGamburger.addEventListener("click", function () {
+  header.classList.remove("header__nav_visible");
+})

@@ -1,13 +1,22 @@
 .header__nav-container {
-    margin-top: 12px;
-    display: flex;
-    margin: 0 auto;
-    max-width: 1200px;
-    justify-content: space-between;
+  margin-top: 12px;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  justify-content: space-between;
 }
 
 @media (max-width: 1100px) {
-    .header__nav-container {
-      max-width: 90%;
-    }
+  .header__nav-container {
+    max-width: 90%;
   }
+}
+
+@media (max-width: 870px) {
+  .header__nav-container {
+    max-width: 100%;
+    margin-top: 50px;
+    margin-left: 10px;
+    display: block;
+  }
+}
