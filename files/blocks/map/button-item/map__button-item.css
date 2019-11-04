@@ -10,3 +10,7 @@
     line-height: 22px;
     letter-spacing: 1px;
 }
+
+.map__button-item:hover {
+    cursor: pointer;
+}

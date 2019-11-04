@@ -7,28 +7,31 @@
     width: 16px;
     height: 16px;
     border: 1px solid #9F82C9;    
-    text-align: center;  
+    text-align: center;
 }
-
-@media (max-width: 700px) {
-    .form__input-checkbox + .form__label-checkbox {
-        width: 50px;
-    }
-  }
 
 .form__input-checkbox:checked + .form__label-checkbox:before{
     color: #9F82C9;
     content: '✔';
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .form__container-privacy {
     display: flex;
     margin-top: 60px;
     margin-bottom: 30px;
+    position: relative;
 }
 
 .form__container-privacy-text {
-    margin: 0 0 0 10px;
+    margin: 0 0 0 25px;
     color: #9F82C9;
+    width: 90%;
+    position: absolute;
+    top: 0;
+    text-align: left;
+}
+
+.form__container-privacy-text:hover {
+    cursor: pointer;
 }

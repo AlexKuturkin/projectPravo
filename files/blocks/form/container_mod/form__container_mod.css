@@ -8,22 +8,21 @@
     }
   }
 
-
 .form__container-item {
   display: flex;
   flex-direction: column;
 }
 
-.form__container-item_mod-name {
+.form__container-item_name {
     margin-right: 50px;
 }
 
 @media (max-width: 765px) {
-    .form__container-item_mod-name {
+    .form__container-item_name {
         margin-bottom: 40px;
     }
   }
 
-.form__container-item_margin-top {
+.form__container-item_history {
     margin-top: 50px;
 }

@@ -1,0 +1,9 @@
+.header__list-item_ref {
+  color: black;
+}
+
+@media (max-width: 870px) {
+  .header__list-item_ref {
+    color: white;
+  }
+}

@@ -1,7 +1,7 @@
-@import url("./active/header__li_active.css");
-@import url("./li_mod/header__li_mod.css");
+@import url("./list_active/header__list_active.css");
+@import url("./list-item/header__list-item.css");
 
-.header__li {
+.header__list {
     list-style: none;
     border: 1px solid #eaeaea;
     opacity: 0;   
@@ -10,7 +10,8 @@
 }
 
 @media (max-width: 870px) {
-    .header__li {
+    .header__list {
       display: none;
+      border: none;
     }
   }

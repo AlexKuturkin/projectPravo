@@ -1,30 +1,38 @@
 // переменные для выпадающего меню
 const aboutFond = document.querySelector(".header__menu-item_fond");
-const liFond = document.querySelector(".header__li_fond");
+const liFond = document.querySelector(".header__list_fond");
 
 const aboutFamily = document.querySelector(".header__menu-item_family");
-const liFamily = document.querySelector(".header__li_family");
+const liFamily = document.querySelector(".header__list_family");
 
 const aboutHelp = document.querySelector(".header__menu-item_help");
-const liHelp = document.querySelector(".header__li_help");
+const liHelp = document.querySelector(".header__list_help");
+
+const menuActive = "header__list_active";
 
 // класс, делающий меню выпадающим
 class MenuItem {
   makeActive(item, menu) {
     item.addEventListener("mouseover", function() {
-      menu.classList.toggle("header__li_active");
+      menu.classList.toggle(menuActive);
     });
 
     item.addEventListener("mouseout", function() {
-      menu.classList.remove("header__li_active");
+      menu.classList.remove(menuActive);
     });
 
     menu.addEventListener("mouseover", function() {
-      menu.classList.toggle("header__li_active");
+      menu.classList.toggle(menuActive);
     });
 
     menu.addEventListener("mouseout", function() {
-      menu.classList.remove("header__li_active");
+      menu.classList.remove(menuActive);
+    });
+  }
+
+  makeClickActive(item, menu) {
+    item.addEventListener("click", function() {
+      menu.classList.toggle(menuActive);
     });
   }
 }
@@ -35,6 +43,10 @@ const menuItem = new MenuItem();
 menuItem.makeActive(aboutFond, liFond);
 menuItem.makeActive(aboutFamily, liFamily);
 menuItem.makeActive(aboutHelp, liHelp);
+
+menuItem.makeClickActive(aboutFond, liFond);
+menuItem.makeClickActive(aboutFamily, liFamily);
+menuItem.makeClickActive(aboutHelp, liHelp);
 
 // код Яндекс карты
 function init() {
@@ -52,7 +64,10 @@ function init() {
       [56.907228, 31.260503],
       {
         balloonContentBody:
-          "<img class=map__balloon-photo src='./images/map__balloon-photo.png'><a href=#><h6 class=map__balloon-subheader>Пермский край</h6><h4 class=map__balloon-headline>История Гульназ и ее сыночка Саида</h4><p class=map__balloon-text>Мне сложно и очень тяжело вспоминать, но я хочу поделиться с вами, как это было три ...</p></a>",
+          `<img class=map__balloon-photo src='./images/map__balloon-photo.png'>
+          <a href=#><h6 class=map__balloon-subheader>Пермский край</h6>
+          <h4 class=map__balloon-headline>История Гульназ и ее сыночка Саида</h4>
+          <p class=map__balloon-text>Мне сложно и очень тяжело вспоминать, но я хочу поделиться с вами, как это было три ...</p></a>`,
         hintContent: "История Гульназ и ее сыночка Саида"
       },
       {
@@ -67,7 +82,10 @@ function init() {
       [56.907228, 36.260503],
       {
         balloonContentBody:
-          "<img class=map__balloon-photo src='./images/map__balloon-photo.png'><a href=#><h6 class=map__balloon-subheader>Пермский край</h6><h4 class=map__balloon-headline>История Гульназ и ее сыночка Саида</h4><p class=map__balloon-text>Мне сложно и очень тяжело вспоминать, но я хочу поделиться с вами, как это было три ...</p></a>",
+          `<img class=map__balloon-photo src='./images/map__balloon-photo.png'>
+          <a href=#><h6 class=map__balloon-subheader>Пермский край</h6>
+          <h4 class=map__balloon-headline>История Гульназ и ее сыночка Саида</h4>
+          <p class=map__balloon-text>Мне сложно и очень тяжело вспоминать, но я хочу поделиться с вами, как это было три ...</p></a>`,
         hintContent: "История Гульназ и ее сыночка Саида"
       },
       {

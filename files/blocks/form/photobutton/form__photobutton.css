@@ -1,5 +1,5 @@
 /* кнопка прикрепить фото */
-.form__input-file {
+.form__photobutton {
 	width: 0.1px;
 	height: 0.1px;
 	opacity: 0;
@@ -7,7 +7,8 @@
 	position: absolute;
 	z-index: -1;
 }
-.form__input-file, .form__label-file {
+
+.form__photobutton, .form__photobutton-file {
     font-weight: 700;
     color: #9F82C9;
     display: inline-block;
@@ -19,13 +20,10 @@
     margin-top: 40px;
 }
 
-.form__input-file:focus + .form__label-file,
-.form__input-file + .form__label-file:hover {
-    background-color: #F2F8F6;
-}
-.form__input-file__image {
+.form__photobutton-image {
     margin-right: 10px;
 }
-.form__input-file__span {
+
+.form__photobutton-text {
     margin-top: 3px;
 }

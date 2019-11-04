@@ -3,10 +3,11 @@
 @import url("./container/form__container.css");
 @import url("./container_mod/form__container_mod.css");
 @import url("./input-text/form__input-text.css");
-@import url("./label/form__label.css");
+@import url("./item/form__item.css");
 @import url("./photobutton/form__photobutton.css");
 @import url("./text/form__text.css");
 @import url("./textarea/form__textarea.css");
+@import url("./form_outline/form_outline.css");
 
 .form {
   margin: 0 auto 160px;

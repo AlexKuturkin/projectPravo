@@ -1,4 +1,4 @@
-.header__li-container.li-container_active {
+.header__menu-container.header__menu-container_active {
     display: flex;
     height: 0;
     position: relative;

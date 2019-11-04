@@ -1,11 +1,12 @@
-.header__li.header__li_active {
+.header__list.header__list_active {
     opacity: 1;
     z-index: 1;
     position: relative;
 }
 
 @media (max-width: 870px) {
-    .header__li.header__li_active {
+    .header__list.header__list_active {
       display: block;
+      margin-left: 20px;
     }
   }
