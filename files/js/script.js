@@ -124,18 +124,18 @@ const showMap = document.querySelector(".map__button-item_show");
 const list = document.querySelector(".map__list");
 
 showList.addEventListener("click", function() {
-  list.classList.add("map_mod-visible");
-  map.classList.add("map_mod-invisible");
-  showList.classList.add("map__button_mod-active");
-  showMap.classList.add("map__button_mod-inactive");
+  list.classList.add("map_view_visible");
+  map.classList.add("map_view_invisible");
+  showList.classList.add("map__button_color_active");
+  showMap.classList.add("map__button_color_inactive");
 });
 
 showMap.addEventListener("click", function() {
-  list.classList.remove("map_mod-visible");
-  map.classList.remove("map_mod-invisible");
-  map.classList.add("map_mod-visible");
-  showList.classList.remove("map__button_mod-active");
-  showMap.classList.remove("map__button_mod-inactive");
+  list.classList.remove("map_view_visible");
+  map.classList.remove("map_view_invisible");
+  map.classList.add("map_view_visible");
+  showList.classList.remove("map__button_color_active");
+  showMap.classList.remove("map__button_color_inactive");
 });
 
 // запуск карты

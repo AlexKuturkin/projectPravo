@@ -1,0 +1,9 @@
+.form__container-item_name {
+    margin-right: 50px;
+}
+
+@media (max-width: 765px) {
+    .form__container-item_name {
+        margin-bottom: 40px;
+    }
+  }

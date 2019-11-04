@@ -1,6 +1,12 @@
 .map__list-header {
-    font-size: 30px;
-    line-height: 28px;
-    color: #653D7C;
-    width: 40%;
+  font-size: 30px;
+  line-height: 28px;
+  color: #653d7c;
+  width: 40%;
+}
+
+@media (max-width: 750px) {
+  .map__list-header {
+    width: 100%;
+  }
 }

@@ -1,7 +1,7 @@
-.map_mod-visible {
+.map_view_visible {
     display: block;
 }
 
-.map_mod-invisible {
+.map_view_invisible {
     display: none;
 }

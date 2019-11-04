@@ -1,0 +1,9 @@
+.form__container-name-region {
+    display: flex;
+}
+
+@media (max-width: 765px) {
+    .form__container-name-region {
+        flex-direction: column;
+    }
+  }

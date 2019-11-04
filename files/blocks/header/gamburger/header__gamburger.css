@@ -2,6 +2,7 @@
   width: 24px;
   height: 20px;
   display: none;
+  cursor: pointer;
 }
 
 @media (max-width: 870px) {

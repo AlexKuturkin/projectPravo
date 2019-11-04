@@ -1,0 +1,7 @@
+@import url("./history/form__container-item_history.css");
+@import url("./name/form__container-item_name.css");
+
+.form__container-item {
+    display: flex;
+    flex-direction: column;
+  }

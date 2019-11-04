@@ -1,3 +1,7 @@
+@import url("./name-region/form__container-name-region.css");
+@import url("./item/form__container-item.css");
+@import url("./privacy/form__container-privacy.css");
+
 .form__container {
     font-family: Open Sans;
     color: #653d7c;
