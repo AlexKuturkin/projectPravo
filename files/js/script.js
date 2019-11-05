@@ -12,7 +12,7 @@ const menuActive = "header__list_active";
 
 // класс, делающий меню выпадающим
 class MenuItem {
-  makeActive(item, menu) {
+  makeHoverActive(item, menu) {
     item.addEventListener("mouseover", function() {
       menu.classList.toggle(menuActive);
     });
@@ -39,14 +39,40 @@ class MenuItem {
 
 // создаём новый объект, чтобы вызывать методы класса
 const menuItem = new MenuItem();
-// вызываем методы
-menuItem.makeActive(aboutFond, liFond);
-menuItem.makeActive(aboutFamily, liFamily);
-menuItem.makeActive(aboutHelp, liHelp);
+// функция для изменения выпадения меню + вызываем методы в ней
 
-menuItem.makeClickActive(aboutFond, liFond);
-menuItem.makeClickActive(aboutFamily, liFamily);
-menuItem.makeClickActive(aboutHelp, liHelp);
+function changeShowMenu() {
+  if (window.innerWidth > 768) {
+    menuItem.makeHoverActive(aboutFond, liFond);
+    menuItem.makeHoverActive(aboutFamily, liFamily);
+    menuItem.makeHoverActive(aboutHelp, liHelp);
+  }
+  else {
+    menuItem.makeClickActive(aboutFond, liFond);
+    menuItem.makeClickActive(aboutFamily, liFamily);
+    menuItem.makeClickActive(aboutHelp, liHelp);
+  } 
+}
+
+changeShowMenu ();
+
+
+
+// объект, в котором хранятся данные для балуна
+const stories = [
+  {
+    src: "./images/map__balloon-photo.png",
+    subheader: "Пермский край",
+    header: "История Гульназ и ее сыночка Саида",
+    text: "Мне сложно и очень тяжело вспоминать, но я хочу поделиться с вами, как это было три ..."
+  },
+  {
+    src: "./images/map__balloon-photo.png",
+    subheader: "Пермский край",
+    header: "История Гульназ и ее сыночка Саида",
+    text: "Мне сложно и очень тяжело вспоминать, но я хочу поделиться с вами, как это было три ..."
+  }
+];
 
 // код Яндекс карты
 function init() {
@@ -63,11 +89,10 @@ function init() {
     myPlacemark = new ymaps.Placemark(
       [56.907228, 31.260503],
       {
-        balloonContentBody:
-          `<img class=map__balloon-photo src='./images/map__balloon-photo.png'>
-          <a href=#><h6 class=map__balloon-subheader>Пермский край</h6>
-          <h4 class=map__balloon-headline>История Гульназ и ее сыночка Саида</h4>
-          <p class=map__balloon-text>Мне сложно и очень тяжело вспоминать, но я хочу поделиться с вами, как это было три ...</p></a>`,
+        balloonContentBody: `<img class=map__balloon-photo src=${stories[0].src}>
+          <a href=#><h6 class=map__balloon-subheader>${stories[0].subheader}</h6>
+          <h4 class=map__balloon-headline>${stories[0].header}</h4>
+          <p class=map__balloon-text>${stories[0].text}</p></a>`,
         hintContent: "История Гульназ и ее сыночка Саида"
       },
       {
@@ -81,11 +106,10 @@ function init() {
     myPlacemark2 = new ymaps.Placemark(
       [56.907228, 36.260503],
       {
-        balloonContentBody:
-          `<img class=map__balloon-photo src='./images/map__balloon-photo.png'>
-          <a href=#><h6 class=map__balloon-subheader>Пермский край</h6>
-          <h4 class=map__balloon-headline>История Гульназ и ее сыночка Саида</h4>
-          <p class=map__balloon-text>Мне сложно и очень тяжело вспоминать, но я хочу поделиться с вами, как это было три ...</p></a>`,
+        balloonContentBody: `<img class=map__balloon-photo src=${stories[1].src}>
+          <a href=#><h6 class=map__balloon-subheader>${stories[1].subheader}</h6>
+          <h4 class=map__balloon-headline>${stories[1].header}</h4>
+          <p class=map__balloon-text>${stories[1].text}</p></a>`,
         hintContent: "История Гульназ и ее сыночка Саида"
       },
       {
@@ -123,33 +147,37 @@ const showList = document.querySelector(".map__button-item_list");
 const showMap = document.querySelector(".map__button-item_show");
 const list = document.querySelector(".map__list");
 
+const mapVisible = "map_view_visible";
+const mapInvisible = "map_view_invisible";
+const mapColorActive = "map__button_color_active";
+const mapColorInactive = "map__button_color_inactive";
+
 showList.addEventListener("click", function() {
-  list.classList.add("map_view_visible");
-  map.classList.add("map_view_invisible");
-  showList.classList.add("map__button_color_active");
-  showMap.classList.add("map__button_color_inactive");
+  list.classList.add(mapVisible);
+  map.classList.add(mapInvisible);
+  showList.classList.add(mapColorActive);
+  showMap.classList.add(mapColorInactive);
 });
 
 showMap.addEventListener("click", function() {
-  list.classList.remove("map_view_visible");
-  map.classList.remove("map_view_invisible");
-  map.classList.add("map_view_visible");
-  showList.classList.remove("map__button_color_active");
-  showMap.classList.remove("map__button_color_inactive");
+  list.classList.remove(mapVisible);
+  map.classList.remove(mapInvisible);
+  map.classList.add(mapVisible);
+  showList.classList.remove(mapColorActive);
+  showMap.classList.remove(mapColorInactive);
 });
 
 // запуск карты
 ymaps.ready(init);
 
-
 const header = document.querySelector(".header__nav");
 const gamburger = document.querySelector(".header__gamburger");
-const closeGamburger = document.querySelector(".header__gamburger-close"); 
+const closeGamburger = document.querySelector(".header__gamburger-close");
 
-gamburger.addEventListener("click", function () {
+gamburger.addEventListener("click", function() {
   header.classList.add("header__nav_visible");
-})
+});
 
-closeGamburger.addEventListener("click", function () {
+closeGamburger.addEventListener("click", function() {
   header.classList.remove("header__nav_visible");
-})
+});
