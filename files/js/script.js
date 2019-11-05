@@ -57,7 +57,6 @@ function changeShowMenu() {
 changeShowMenu ();
 
 
-
 // объект, в котором хранятся данные для балуна
 const stories = [
   {
